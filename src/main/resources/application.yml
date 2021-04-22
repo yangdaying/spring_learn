@@ -3,4 +3,27 @@ server:
   port: 8080
   servlet:
     context-path: /spring_learn
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dev?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: adobe_123
+    dbcp2:
+      initial-size: 4
+      max-idle: 4
+      min-idle: 2
+      max-total: 8
+  redis:
+    database: 0
+    host: localhost
+    password: ""
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+mybatis:
+  type-aliases-package: com.example.demo.bean
+  mapper-locations: classpath:mapper/*.xml
 
