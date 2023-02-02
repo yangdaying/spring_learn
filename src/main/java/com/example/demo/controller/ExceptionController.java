@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import com.health.app.exception.MyException;
+import com.example.demo.exception.MyException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
